@@ -1,127 +1,20 @@
-.navbar-nav {
-  font-size: 2rem;
-  font-weight: 500;
-  color: #fff;
-}
-
-.navbar {
-  padding: 2.48rem 0 4rem 0;
-  @include addMediaQuery(tablet) {
-    padding: 2.48rem 2rem 4rem 2rem;
-  }
-}
-
-.nav {
-  position: relative;
-  box-shadow: 0 5px 10px rgba(#fff, 0.1);
-  background-color: $color-white;
-}
 .nav-link {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
-  font-weight: 700;
-  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  color: $color-secondary;
+  margin: 0 1rem;
 
-  i {
-    color: $color-primary;
-  }
-  &--icon {
-    display: inline-block;
-    i {
-      color: #fff;
-    }
-  }
-
-  &--icon:not(:last-child) {
-    padding: 0 0.5rem !important;
-  }
-  &--icon:last-child {
-    padding: 0 0 0 0.5rem !important;
-  }
-
-  &__active {
-    color: $color-primary;
-    i {
-      color: $color-primary;
-    }
-  }
-}
-
-.nav-item {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-toggler-icon {
-  font-size: 2.1rem;
-}
-.navbar-brand {
   img {
-    @include addMediaQuery(tablet) {
-      height: 2.5rem;
-    }
+    margin-right: 5px;
   }
 }
-
-.nav-item:not(:last-child) {
-  padding-right: 2.25rem;
-  padding-left: 2.25rem;
-
-  @include addMediaQuery(laptop) {
-    padding-right: 0rem;
-    padding-left: 0rem;
-  }
+.navbar-nav .dropdown-menu {
+  position: absolute;
 }
 
-.top-nav {
-  display: flex;
-  justify-content: flex-end;
-  margin: 0.3rem 0;
-
-  @include addMediaQuery(laptop) {
-    justify-content: center;
-  }
-
-  @include addMediaQuery(tablet) {
-    margin: 0;
-  }
-  &__list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    margin: 0.3rem 0;
-    padding-left: 0;
-    @include addMediaQuery(laptop) {
-      justify-content: center;
-    }
-    @include addMediaQuery(tablet) {
-      margin: 0;
-    }
-  }
-
-  &__item {
-    list-style: none;
-    font-size: 1.5rem;
-    color: #fff;
-  }
-
-  &__link {
-    text-decoration: none;
-    color: #fff;
-    @include addMediaQuery(tablet) {
-      font-size: 1rem;
-    }
-
-    i {
-      color: $color-primary;
-    }
-  }
-
-  &__icon {
-    margin-right: 0.5rem;
-  }
-
-  &__item:not(:last-child) {
-    margin: 0rem 1rem;
+.navbar-nav {
+  .active {
+    color: $color-primary !important;
   }
 }
