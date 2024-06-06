@@ -364,18 +364,21 @@ body {
 
 .contact {
   padding: 0 2rem; }
+  @media (max-width: 992px) {
+    .contact {
+      padding: 2rem 2rem; } }
   .contact__social-list {
     padding-left: 0;
     list-style: none; }
-  @media (max-width: 992px) {
-    .contact {
-      padding: 2rem 0rem; } }
   .contact__social-link {
     margin-right: 1rem; }
 
 .footer {
   background-color: #181818;
   padding: 6.4rem 0; }
+  @media (max-width: 992px) {
+    .footer {
+      padding: 2rem 2rem; } }
   .footer__link {
     display: block;
     color: #979aa0;
