@@ -1,4 +1,7 @@
 .team-box {
+  @include addMediaQuery(laptop) {
+    margin: 2rem 0;
+  }
   &__name {
     font-size: 2.2rem;
     font-weight: 700;

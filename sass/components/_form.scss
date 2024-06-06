@@ -18,6 +18,16 @@
     &::placeholder {
       color: #32475c61;
     }
+
+    &--dark {
+      background-color: #252525;
+      border: 1px solid #323539;
+      color: $color-white;
+
+      &::placeholder {
+        color: #979aa0;
+      }
+    }
   }
 
   &__select {
@@ -71,6 +81,9 @@
     font-size: 1.6rem;
     font-weight: 500;
     padding-left: 1.5rem;
+    @include addMediaQuery(laptop) {
+      font-size: 1.1rem;
+    }
   }
 
   &__group {

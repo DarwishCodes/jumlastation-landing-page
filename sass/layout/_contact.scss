@@ -1,0 +1,14 @@
+.contact {
+  padding: 0 2rem;
+
+  &__social-list {
+    padding-left: 0;
+    list-style: none;
+  }
+  @include addMediaQuery(laptop) {
+    padding: 2rem 0rem;
+  }
+  &__social-link {
+    margin-right: 1rem;
+  }
+}

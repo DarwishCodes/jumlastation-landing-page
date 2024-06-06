@@ -28,6 +28,9 @@
       width: 1px;
       height: 100%;
       background-color: #e5e5e7;
+      @include addMediaQuery(laptop) {
+        display: none;
+      }
     }
   }
 
