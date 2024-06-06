@@ -1,7 +1,35 @@
 .feature-box {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+
+  &--border {
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -1rem;
+      width: 1px;
+      height: 100%;
+      background-color: #e5e5e7;
+
+      @include addMediaQuery(laptop) {
+        display: none;
+      }
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      right: -1rem;
+      width: 1px;
+      height: 100%;
+      background-color: #e5e5e7;
+    }
+  }
 
   @include addMediaQuery(laptop) {
     margin-bottom: 2rem;
